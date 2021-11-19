@@ -14,8 +14,7 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
         } else {
           chip = `<span class="chip"> out of stock </span>`;
         }
-
-        card.innerHTML = `
+        let html = `
         <div class="card" key=${product.UPC}>
         <a class="cardlink" href="./Pdp.html?${product.UPC}" >
             <img class="cardmedia" src="https://via.placeholder.com/350" />
@@ -29,11 +28,11 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
         </a>
     </div>
             `;
+        card.innerHTML = html;
 
         productsWrapper.appendChild(card);
       });
     }
 
     populateProducts(products);
-
   });
