@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
