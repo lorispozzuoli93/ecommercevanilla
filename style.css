@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 .navbar {
@@ -7,4 +8,195 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.logo {
+  display: block;
+}
+
+.containerbotton {
+  margin-top: 22px;
+}
+
+.buttonstock {
+  background-color: transparent;
+  color: #1976d2;
+  height: 36px;
+  min-width: 64px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  box-shadow: 0px 1.5px #888888;
+  vertical-align: middle;
+  transition: 250ms;
+}
+
+.buttonstock:hover {
+  background-color: rgba(25, 118, 210, 0.04);
+  color: #1976d2;
+  border: 1px solid rgb(25, 118, 210);
+}
+
+.selected {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.selected:hover {
+  background-color: #155697;
+}
+
+.containersearch {
+  margin-right: 50px;
+}
+
+.textfield {
+  font-size: 1.063rem;
+  padding: 10px;
+  padding-left: 19px;
+  height: 34px;
+  margin-right: 16px;
+  border: 1px solid rgb(100, 100, 100, 0.5);
+  border-radius: 3px;
+}
+
+.searchwrapper {
+  position: relative;
+  margin-top: 8px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.reset {
+  position: relative;
+  height: 36px;
+  margin-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  transition: background 0.5s;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 15.5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer {
+  background-color: #bdbdbd;
+  text-align: right;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttonfooter {
+  display: inline-flex;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  color: rgb(25, 118, 210);
+  border: 0px;
+  vertical-align: middle;
+}
+
+#borderbuttonfooter {
+  border-right: 1px solid rgb(25, 118, 210);
+}
+
+.grid {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridproduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 16px;
+  padding-left: 0.85%;
+  padding-right: 0.85%;
+  padding-bottom: 84px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+.cardlink {
+  text-decoration: none;
+  color: black;
+}
+
+.cardmedia {
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.cardcontent {
+  padding-left: 16px;
+  margin-top: 0px;
+}
+
+.typography {
+  margin: 0px;
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.typographyprice {
+  margin: 0px 0px 12px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.typographystock {
+  margin: 0px 0px 24px;
+}
+
+.chip {
+  font-size: 0.8125rem;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  letter-spacing: 0.1px;
+  cursor: default;
+  outline: 0px;
+  text-decoration: none;
+  border: 0px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }

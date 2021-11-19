@@ -11,19 +11,36 @@
 </head>
 
 <body>
-    <Navbar class="navbar">
+    <div class="grid">
+        <navbar class="navbar">
+            <div>
+                <img class="logo" src="https://via.placeholder.com/150x80" alt="logo">
+            </div>
+            <div class="containerbotton">
+                <button class="buttonstock">In stock</button>
+                <button class="buttonstock">Out of stock</button>
+            </div>
+            <div class="containersearch">
+                <div class="searchwrapper">
+                    <input class="textfield" type="text" placeholder="search">
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+        </navbar>
         <div>
-            <img src="https://via.placeholder.com/150x80" alt="logo">
+            <div class="gridproduct" id="products-wrapper">
+                <!-- Inserito con javascript -->
+            </div>
         </div>
-        <div>
-            <button>In stock</button>
-            <button>Out of stock</button>
-        </div>
-        <div>
-            <input type="text">Search
-            <button>Reset</button>
-        </div>
-    </Navbar>
+        <footer class="footer">
+            <a>
+                <Button id="borderbuttonfooter" class="buttonfooter" className="border">TWITTER</Button>
+            </a>
+            <a>
+                <Button class="buttonfooter">FACEBOOK</Button>
+            </a>
+        </footer>
+    </div>
     <script src="./script.js"></script>
 </body>
 
