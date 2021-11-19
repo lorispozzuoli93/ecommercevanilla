@@ -200,3 +200,95 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+.griddp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 20px;
+}
+
+.containertitle {
+  grid-column: 1/4;
+}
+
+.typographytitle {
+  margin: 0px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.typographypdp {
+  margin: 0px;
+  font-size: 2.188rem;
+  font-weight: bold;
+}
+
+.containermedia {
+  grid-column: 1/2;
+}
+
+.containertext {
+  margin-right: 100px;
+}
+
+.typographypricepdp {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.typographyname {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.typographyname span {
+  color: grey;
+}
+
+.buttonaddcart {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.containercolor {
+  grid-column: 1/4;
+}
+
+.typographycolors {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gridimage {
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 100px;
+}
+
+.gridimage::-webkit-scrollbar {
+  display: none;
+}
+
+.gridimage img {
+  cursor: pointer;
+  height: 150px;
+  width: 200px;
+  margin-right: 25px;
+}

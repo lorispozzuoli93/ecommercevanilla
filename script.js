@@ -1,7 +1,7 @@
 fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
   .then((response) => response.json())
   .then((products) => {
-    function populateAds(products) {
+    function populateProducts(products) {
       let productsWrapper = document.querySelector("#products-wrapper");
 
       products.forEach((product) => {
@@ -17,7 +17,7 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
 
         card.innerHTML = `
         <div class="card" key=${product.UPC}>
-        <a class="cardlink" href={/product/${product.UPC}}>
+        <a class="cardlink" href="./Pdp.html?${product.UPC}" >
             <img class="cardmedia" src="https://via.placeholder.com/350" />
             <div class="cardcontent">
                 <h5 class="typography">${product.name}</h5>
@@ -29,8 +29,11 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
         </a>
     </div>
             `;
+
         productsWrapper.appendChild(card);
       });
     }
-    populateAds(products);
+
+    populateProducts(products);
+
   });

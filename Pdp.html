@@ -8,11 +8,89 @@
     <title>Ecommerce Vanilla</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./favicon/favicon.ico" />
+
 </head>
 
 <body>
-    
-    <script src="./script.js"></script>
+    <!-- <div id="pdp">
+    </div> -->
+    <div class="grid">
+        <navbar class="navbar">
+            <div class="container">
+                <div>
+                    <img class="logo" src="https://via.placeholder.com/150x80" alt="logo">
+                </div>
+                <div class="containerbotton">
+                    <button class="buttonstock">In stock</button>
+                    <button class="buttonstock">Out of stock</button>
+                </div>
+                <div class="containersearch">
+                    <div class="searchwrapper">
+                        <input class="textfield" type="text" placeholder="search">
+                        <button class="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+        <div>
+            <div class="gridpdp" id="productsPdp-wrapper">
+
+            </div>
+        </div>
+        <footer class="footer">
+            <a>
+                <Button id="borderbuttonfooter" class="buttonfooter" className="border">TWITTER</Button>
+            </a>
+            <a>
+                <Button class="buttonfooter">FACEBOOK</Button>
+            </a>
+        </footer>
+    </div>
+    <script src="./scriptPdp.js"></script>
 </body>
 
 </html>
+
+
+<!-- {variant ? (
+<>
+    <div class="containertitle">
+        <h5 class="typographytitle">{variant.name}</h5>
+    </div>
+    <div class="containermedia">
+        <img class="" src={`https://picsum.photos/1000/600?random=${variant.UPC}`} />
+    </div>
+    <div class="containertext">
+        <p class="typographypdp">{variant.name}</p>
+        <p class="typographypricepdp">
+            {variant.price.current.value} USD
+        </p>
+        <p class="typographyname">
+            <span>Name:</span> {variant.name}
+        </p>
+        <p class="typographyname">
+            <span>Lens color:</span> Green
+        </p>
+        <p class="typographyname">
+            <span>Size:</span> Standard
+        </p>
+        <p class="typographyname">
+            <span>UPC:</span> {variant.UPC}
+        </p>
+        <button class="buttonaddcart">Add to cart</button>
+    </div>
+    <div class="containercolor">
+        <p class="typographycolors">Available colors:</p>
+        <div class="gridimage">
+            <img alt={`Product${product.UPC}`} src={`https://picsum.photos/1000/600?random=${product.UPC}`}
+                onClick={()=> setVariant(product)}
+            />
+            {product.variants.map((prod) => (
+            <img key={prod.UPC} alt={`Product${prod.UPC}`} src={`https://picsum.photos/1000/600?random=${prod.UPC}`}
+                onClick={()=> setVariant(prod)}
+            />
+            ))}
+        </div>
+    </div>
+</>
+) : null} -->
