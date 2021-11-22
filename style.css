@@ -201,7 +201,7 @@
   box-sizing: border-box;
 }
 
-.griddp {
+.containerpdp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
@@ -210,7 +210,6 @@
   margin-right: 2.5%;
   margin-top: 20px;
 }
-
 .containertitle {
   grid-column: 1/4;
 }

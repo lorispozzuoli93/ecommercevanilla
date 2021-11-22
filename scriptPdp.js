@@ -9,22 +9,30 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
     let cardPdp = document.getElementById("productsPdp-wrapper");
 
     cardPdp.innerHTML = `
-    <p>${product.name}</p>
-    <div class="griddp">
-      <img alt="Product${product.UPC}" src="https://picsum.photos/1000/600?random=${product.UPC}"/>
-      <div>
-        <p>${product.price.current.value} USD</p>
-        <p><span>Name:</span> ${product.name}</p>
-        <p><span>Lens color:</span> Green</p>
-        <p><span>Size:</span> Standard</p>
-        <p><span>UPC:</span> ${product.UPC}</p>
-      </div>
-    </div>
+    <div class="containertitle">
+                <p>${product.name}</p>
+            </div>
+            <div class="containermedia">
+                <img alt="Product${product.UPC}" src="https://picsum.photos/1000/600?random=${product.UPC}" />
+            </div>
+            <div class="containertext">
+                <p>${product.price.current.value} USD</p>
+                <p><span>Name:</span> ${product.name}</p>
+                <p><span>Lens color:</span> Green</p>
+                <p><span>Size:</span> Standard</p>
+                <p><span>UPC:</span> ${product.UPC}</p>
+                <button>Add to cart</button>
+            </div>
     `;
 
     let variantsDiv = document.getElementById("variants");
 
-    variantsDiv.innerHTML += ` <img alt="Product${product.UPC}" src="https://picsum.photos/1000/600?random=${product.UPC}"/>`;
+    variantsDiv.innerHTML += `
+    <div class="containercolor">
+                    <p>Available colors:</p>
+                    <img alt="Product${product.UPC}" src="https://picsum.photos/1000/600?random=${product.UPC}" />
+                </div>
+    `;
 
     product.variants.map(
       (v) =>
@@ -33,25 +41,3 @@ fetch("https://assets.fc-dev.instore.oakley.com/assets/products/products.json")
     `)
     );
   });
-
-// `<div class="containertitle">
-//         <h5 class="typographytitle">${variant.name}</h5>
-//     </div>
-//     <div class="containermedia">
-//         <img class="" src="https://picsum.photos/1000/600?random=${variant.UPC}" />
-//     </div>
-//     <div class="containertext">
-//
-//         <button class="buttonaddcart">Add to cart</button>
-//     </div>
-//     <div class="containercolor">
-//         <p class="typographycolors">Available colors:</p>
-//         <div class="gridimage">
-//             <img alt="Product${product.UPC}" src="https://picsum.photos/1000/600?random=${product.UPC}"
-//                 onClick={()=> setVariant(product)}
-//             />
-//             {product.variants.map((prod) => (
-//             <img key={prod.UPC} alt="Product${prod.UPC}" src="https://picsum.photos/1000/600?random=${prod.UPC}"
-//                 onClick={()=> setVariant(prod)}
-//             />
-//             ))}`
